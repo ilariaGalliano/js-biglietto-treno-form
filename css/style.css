@@ -1,0 +1,35 @@
+/* General */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: sans-serif;
+  background: #b9144f;
+}
+
+h1{
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/* section{
+  display: flex;
+  justify-content: center;
+} */
+h3{
+  padding: 15px;
+}
+.età{
+  width: 150px;
+}
+
+.box{
+  background-color: #fff;
+  width: 500px;
+  height: 400px;
+}
