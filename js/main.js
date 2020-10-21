@@ -37,23 +37,48 @@ genera.addEventListener('click' , function() {
       // sconto 40%
       //var totalCost: (costoTicket - discountOld).toFixed(2) + '€';
       costoTicket -= costoTicket * 0.4;
-      offerta = 'Sconto minorenni';
+      offerta = 'Sconto over 65';
   }
   else {
       //var totalCost: costoTicket.toFixed(2) + '€';
       offerta = 'biglietto standard';
   }
 
+  costoTicket = costoTicket.toFixed(2)+ '€';
+
+
   // Carrozza
   var numeroCarr = Math.floor( Math.random( ) * 10) + 1;
 
   // Codice CP da 9000 a 10000 escluso
-  var codCp = Math.floor( Math.random(10000 - 9000) ) + 9000;
+  var codCp = Math.floor( Math.random () * (10000 - 9000) ) + 9000;
 
-  document.getElementById(nome-passeggero).innerHTML = nome;
-  document.getElementById(offerta).innerHTML = offerta;
-  document.getElementById(carrozza).innerHTML = numeroCarr;
-  document.getElementById(codice-cp).innerHTML = codCp;
-  document.getElementById(costo).innerHTML = costoTicket;
+  // Valori biglietto
+  document.getElementById('passeggero').innerHTML = nome;
+  document.getElementById('offerta').innerHTML = offerta;
+  document.getElementById('carrozza').innerHTML = numeroCarr;
+  document.getElementById('codice-cp').innerHTML = codCp;
+  document.getElementById('costo').innerHTML = costoTicket;
 
+
+// Visibilità Biglietto
+  biglietto.className = 'visible';
+})
+
+// Annulla biglietto
+  annulla.addEventListener('click' , function() {
+
+  document.getElementById('nome').value = ' ';
+  document.getElementById('km').value = ' ';
+  document.getElementById('eta-utente').value = ' ';
+
+  // Valori biglietto
+  document.getElementById('passeggero').innerHTML = ' ';
+  document.getElementById('offerta').innerHTML = ' ';
+  document.getElementById('carrozza').innerHTML = ' ';
+  document.getElementById('codice-cp').innerHTML = ' ';
+  document.getElementById('costo').innerHTML = ' ';
+
+// Visibilità Biglietto
+  biglietto.className = 'hidden';
 })

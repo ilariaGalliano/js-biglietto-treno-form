@@ -24,12 +24,33 @@ h1{
 h3{
   padding: 15px;
 }
+.container{
+  text-align: center;
+}
 .età{
   width: 150px;
 }
 
 .box{
   background-color: #fff;
-  width: 500px;
+  width: 50%;
   height: 400px;
+  margin: 0 auto;
+}
+span{
+  padding: 15px;
+}
+.box-text{
+  padding: 15px;
+}
+.box-output{
+  padding: 15px;
+}
+/**/
+.hidden{
+  opacity: 0;
+}
+
+.visible{
+  opacity: 1;
 }
