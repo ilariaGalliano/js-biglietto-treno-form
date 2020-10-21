@@ -5,40 +5,71 @@
   margin: 0;
 }
 
+/* Style */
 body{
   font-family: sans-serif;
   background: #b9144f;
 }
-
 h1{
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
+  color: #fff;
 }
-/* section{
-  display: flex;
-  justify-content: center;
-} */
 h3{
-  padding: 15px;
-}
-.container{
-  text-align: center;
-}
-.età{
-  width: 150px;
-}
-
-.box{
-  background-color: #fff;
-  width: 50%;
-  height: 400px;
-  margin: 0 auto;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 20px 0;
+  color: #fff;
 }
 span{
   padding: 15px;
+  display: inline-block;
+  width: 15%;
+}
+input,
+select{
+  padding: 6px 12px;
+  text-align: center;
+  border: 1px solid #b9144f;
+  border-radius: 10px;
+}
+h5{
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+/* Button */
+.btn{
+  font-size: 16px;
+  color: #b9144f;
+  background: lightgrey;
+  padding: 5px;
+  border: 1px solid #b9144f;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.età{
+  width: 160px;
+}
+
+/* Container */
+.container{
+  text-align: center;
+}
+
+/* Box */
+.box-text span{
+  font-weight: bold;
+}
+.box{
+  background-color: #fff;
+  width: 800px;
+  height: 340px;
+  margin: 0 auto;
+  border-radius: 10px;
 }
 .box-text{
   padding: 15px;
@@ -46,7 +77,8 @@ span{
 .box-output{
   padding: 15px;
 }
-/**/
+
+/* Visibilità biglietto */
 .hidden{
   opacity: 0;
 }
